@@ -340,7 +340,10 @@ nav {
 
 .about-content {
     position: relative;
-    width: 500px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .about-content h1::before {
@@ -348,8 +351,7 @@ nav {
     content: "";
     width: 40px;
     height: 3px;
-    top: -15px;
-
+    top: 17px;
     background: var(--secondary-color);
 
 }
@@ -599,7 +601,7 @@ nav {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid yellow;
+    border: 6px solid var(--primary-color);
     /* box-shadow: 0 0 6px rgba(240, 36, 117, 0.4); */
 }
 
@@ -787,8 +789,8 @@ nav {
 @media (width < 768px) {
 
     .nav-bar {
-        padding: 2rem !important;
-        background-color: var(--secondary-color);
+        padding: 1.2rem !important;
+        background-color: var(--primary-color);
 
     }
 
@@ -803,12 +805,12 @@ nav {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
         transform: translateY(-100%);
         top: 0;
         transition: 0.5s;
-        margin-top: 108px;
-        padding-bottom: 20px !important;
+        margin-top: 90px;
+        padding-bottom: 25px !important;
         padding-top: 20px !important;
         z-index: -1;
 
@@ -822,13 +824,18 @@ nav {
 
     .container-text-content {
         padding: 0 2rem;
-        margin-top: 262px;
+        margin-top: 226px;
+        width: 416px;
     }
 
     .container__text h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 700;
-      
+
+    }
+
+    .container__text p {
+        font-size: 18px;
     }
 
     .contect-btn a {
@@ -846,8 +853,23 @@ nav {
 
     }
 
+    .about-content {
+        width: 380 !important;
+    }
+
+    .about-content h1::before {
+        top: -18px;
+    }
+
+    .about-content h3 {
+        font-size: 25px;
+
+        line-height: 30px;
+
+    }
+
     .about-content p {
-        font-size: 19px;
+        line-height: 25px;
     }
 
     .initiatives-section {
@@ -859,7 +881,15 @@ nav {
 
     }
 
+    .vision-impact h1 {
+        font-size: 29px;
+    }
+
     .presence-section {
-        padding: 3rem 1rem;
+        padding: 3rem 1.6rem;
+    }
+
+    .footer-content {
+        padding: 0rem 2rem;
     }
 }
