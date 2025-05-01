@@ -83,7 +83,7 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transform: translateY(-100%);
     top: 0;
     transition: 0.5s;
@@ -248,10 +248,8 @@ nav {
     text-align: start;
     z-index: 10;
     color: var(--rt-color-primary);
-    /* background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5468312324929971) 0%, rgba(0, 61, 91, 0.6504726890756303) 80%); */
-    background: #ffffff;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 5%, rgba(1, 172, 228, 0.38) 94%);
+    background: #858585;
+    background: linear-gradient(180deg, rgba(133, 133, 133, 0.43) 8%, rgba(5, 79, 165, 0.69) 91%);
 }
 
 .container-text-content {
@@ -264,7 +262,7 @@ nav {
 
     font-size: 3rem;
     font-weight: 800;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 
 
 }
@@ -287,7 +285,7 @@ nav {
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 
@@ -303,7 +301,7 @@ nav {
     position: absolute;
     width: 0%;
     height: 100%;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     top: 0;
     left: 0;
     z-index: -1;
@@ -351,7 +349,7 @@ nav {
     content: "";
     width: 40px;
     height: 3px;
-    top: 17px;
+    top: -13px;
     background: var(--secondary-color);
 
 }
@@ -394,7 +392,6 @@ nav {
 
 
 .initiatives-heading h1 {
-    text-transform: uppercase;
     font-size: 35px;
     font-weight: 700;
     line-height: 39px;
@@ -474,14 +471,13 @@ nav {
 .vision-impact {
     width: var(--max-width);
     padding: 4rem 6rem;
-    background-color: var(--light-bg-color);
+    /* background-color: var(--light-bg-color); */
 }
 
 
 
 
 .vision-impact h1 {
-    text-transform: uppercase;
     font-size: 35px;
     font-weight: 700;
     line-height: 39px;
@@ -515,6 +511,7 @@ nav {
     width: var(--max-width);
     padding: 4rem 6rem;
     padding-bottom: 2rem;
+    background-color: var(--light-bg-color);
 }
 
 
@@ -686,39 +683,172 @@ nav {
 }
 
 
+/* footer section end  */
+
+
+
+/* aboutUs page */
+/* about banner section  */
+
+.about-banner {
+    background-image: url(images/aboutbanner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.about-banner-content {
+    padding: 4rem 6rem;
+    /* background: #ffffff; */
+    /* width: 100%; */
+    background: #858585;
+    background: linear-gradient(180deg, rgba(133, 133, 133, 0.43) 8%, rgba(5, 79, 165, 0.69) 91%);
+}
+
+.about-banner-text {
+    margin-top: 85px;
+}
+
+.about-banner-text h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.about-banner-text p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--extra-light);
+
+}
+
+.about-banner-text span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--extra-light);
+}
+
+.about-banner-text span a {
+    color: var(--extra-light);
+}
+
+.about-banner-text span a:hover {
+    color: var(--primary-color);
+}
+
+
+/* aboutUs section  */
+.aboutus-section {
+    padding: 4rem 2rem;
+    background-color: var(--light-bg-color);
+    color: var(--text-light);
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.about-container p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.about-container ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.about-container ul li {
+    margin-bottom: 0.5rem;
+}
+
+
+.highlight {
+    font-weight: bold;
+    color: #6b7280;
+}
+
+/* aboutUs section  */
 
 
 
 
+/* team section  */
+
+.team-section {
+    padding: 4rem 4rem;
+
+}
+
+.team-section h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 39px;
+    color: var(--primary-color);
+}
+
+/* .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+  } */
+
+.profile-card {
+    background-color: #f8f8f8;
+    padding: 1.6rem;
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.text-center {
+    text-align: start;
+}
 
 
+.profile-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid rgba(198, 198, 198, 0.63);
+    margin-bottom: 1rem;
 
+}
 
+.profile-card h3 {
+    font-family: 23px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #0123e4;
+}
 
+.profile-card p {
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.profile-card .linkedin {
+    font-size: 1.6rem;
+    color: #0077b5;
+    text-decoration: none;
+}
 
 
 
@@ -765,7 +895,7 @@ nav {
 
     .nav-bar {
         padding: 3rem !important;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
     }
 
     .nav-menu-links {
@@ -779,6 +909,11 @@ nav {
         margin-left: 0;
         font-size: 20px;
         color: var(--white);
+    }
+
+    .profile-card {
+
+        height: auto;
     }
 
 }
@@ -886,10 +1021,24 @@ nav {
     }
 
     .presence-section {
-        padding: 3rem 1.6rem;
+        padding: 3rem 1rem;
     }
 
     .footer-content {
-        padding: 0rem 2rem;
+        padding: 0rem 1rem;
+    }
+
+    .team-section {
+        padding: 4rem 1rem;
+
+    }
+
+    .profile-card {
+        padding: 1.3rem;
+        height: auto;
+    }
+
+    .about-banner-content {
+        padding: 3rem 1rem;
     }
 }
