@@ -879,7 +879,7 @@ nav {
     font-family: 23px;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #0123e4;
+    color: var(--primary-color);
 }
 
 .profile-card p {
