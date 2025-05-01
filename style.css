@@ -26,6 +26,22 @@ body {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #e9e9e9
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+
+
 
 
 .title-global-border h1 {
@@ -630,6 +646,36 @@ nav {
 /* presence-section end */
 
 
+/* go tp top button  */
+.go-to-top {
+    position: fixed;
+    z-index: 1000;
+    bottom: 103px;
+    right: 28px;
+    width: 38px;
+    height: 38px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: bottom .4s, transform .4s;
+}
+
+.go-to-top i {
+    font-size: 20px;
+}
+
+.go-to-top:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-.25rem);
+}
+
 
 /* footer section  */
 
@@ -1024,6 +1070,10 @@ nav {
         padding: 3rem 1rem;
     }
 
+    #map {
+        height: 55vh;
+    }
+
     .footer-content {
         padding: 0rem 1rem;
     }
@@ -1041,6 +1091,7 @@ nav {
     .about-banner-content {
         padding: 3rem 1rem;
     }
+
     .aboutus-section {
         padding: 2rem 1rem;
     }
