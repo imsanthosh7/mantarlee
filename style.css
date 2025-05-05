@@ -137,8 +137,8 @@ nav {
     z-index: 1;
 }
 
-.nav-menu-links li a::before,
-.nav-menu-links li a::after {
+.nav-menu-links li .line::before,
+.nav-menu-links li .line::after {
     content: "";
     position: absolute;
     background-color: var(--secondary-color);
@@ -149,24 +149,122 @@ nav {
     transition: transform 0.4s;
 }
 
-.nav-menu-links li a::before {
+.nav-menu-links li .line::before {
     top: 0;
     left: 0;
     transform-origin: left;
 }
 
-.nav-menu-links li a::after {
+.nav-menu-links li .line::after {
     bottom: 0;
     right: 0;
     transform-origin: right;
 }
 
-.nav-menu-links li a:hover::before,
-.nav-menu-links li a:hover::after {
+.nav-menu-links li .line:hover::before,
+.nav-menu-links li .line:hover::after {
     transform: scaleX(1);
 }
 
 
+
+/* dropdown nav  */
+.arrow {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.arrow i {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+.dropbtn:hover .arrow i {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-left: -30px;
+    background-color: var(--light-bg-color);
+    padding: 10px 0;
+    min-width: 240px;
+    z-index: 1000;
+    display: none;
+    text-align: left;
+    /* Ensure all text starts from left */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: var(--secondary-color-dark);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600 !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Force left alignment */
+}
+
+.dropdown-content a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.dropdown-content li {
+    position: relative;
+    list-style: none;
+}
+
+.dropdown-submenu {
+    position: absolute;
+    top: -2px;
+    left: calc(100% - 2px);
+    background-color: var(--light-bg-color);
+    min-width: 200px;
+    padding: 10px 0;
+    z-index: 999;
+    display: none;
+    border-left: 2px solid var(--primary-color);
+    margin-left: 0;
+    box-sizing: border-box;
+
+}
+
+.dropdown-content li:hover>.dropdown-submenu {
+    display: block;
+}
+
+.dropdown-submenu a {
+    padding: 8px 12px;
+    color: var(--secondary-color-dark);
+    text-decoration: none;
+    font-weight: 600 !important;
+    display: block;
+    white-space: nowrap;
+    text-align: left;
+    /* Explicit left-align for submenu items */
+}
+
+.dropdown-submenu a:hover {
+    color: var(--white);
+}
+
+/* dropdown end  */
 
 
 .contect-btn a {
@@ -264,8 +362,10 @@ nav {
     text-align: start;
     z-index: 10;
     color: var(--rt-color-primary);
-    background: #858585;
-    background: linear-gradient(180deg, rgba(133, 133, 133, 0.43) 8%, rgba(5, 79, 165, 0.69) 91%);
+    /* background: #858585;
+    background: linear-gradient(180deg, rgba(133, 133, 133, 0.43) 8%, rgba(5, 79, 165, 0.69) 91%); */
+    background: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(5, 79, 165, 0.74) 100%);
 }
 
 .container-text-content {
@@ -748,8 +848,8 @@ nav {
     padding: 4rem 6rem;
     /* background: #ffffff; */
     /* width: 100%; */
-    background: #858585;
-    background: linear-gradient(180deg, rgba(133, 133, 133, 0.43) 8%, rgba(5, 79, 165, 0.69) 91%);
+    background: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(5, 79, 165, 0.74) 100%);
 }
 
 .about-banner-text {
@@ -1088,6 +1188,14 @@ nav {
         height: auto;
     }
 
+    .about-banner-text h1 {
+        font-size: 2.1rem;
+    }
+
+    .about-banner-text p {
+        font-size: 18px;
+    }
+
     .about-banner-content {
         padding: 3rem 1rem;
     }
@@ -1096,4 +1204,20 @@ nav {
         padding: 2rem 1rem;
     }
 
+    .lakerejuvenation-container {
+        padding: 2rem 1rem !important;
+    }
+
+    .lakerejuvenation-content h2 {
+        font-size: 25px !important;
+    }
+
+    .gallery img {
+        width: 340px !important;
+        height: 234px !important;
+    }
+
+    .gallery {
+        gap: 28px !important;
+    }
 }
