@@ -1204,20 +1204,5 @@ nav {
         padding: 2rem 1rem;
     }
 
-    .lakerejuvenation-container {
-        padding: 2rem 1rem !important;
-    }
 
-    .lakerejuvenation-content h2 {
-        font-size: 25px !important;
-    }
-
-    .gallery img {
-        width: 340px !important;
-        height: 234px !important;
-    }
-
-    .gallery {
-        gap: 28px !important;
-    }
 }

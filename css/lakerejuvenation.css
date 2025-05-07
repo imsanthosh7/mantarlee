@@ -10,15 +10,15 @@
     /* --max-width: 1200px; */
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 .lakerejuvenation-banner {
-    background-image: url('../images/Picture1.png');
+    background-image: url('../images/lakerejuvenationbanner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .section-title {
@@ -28,6 +28,12 @@ body{
     border-bottom: 2px solid #007BFF;
     padding-bottom: 5px;
 }
+
+.lake-image {
+    height: 450px !important;
+    width: 100vw;
+}
+
 
 ul li {
     line-height: 27px;
@@ -98,7 +104,7 @@ li {
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 1000;
+    z-index: 2000;
     left: 0;
     top: 0;
     width: 100%;
@@ -165,4 +171,29 @@ li {
 
 .lightbox .nav:hover {
     color: #ccc;
+}
+
+@media (width < 768px) {
+
+
+    .lakerejuvenation-container {
+        padding: 2rem 1rem !important;
+    }
+
+    .lakerejuvenation-content h2 {
+        font-size: 25px !important;
+    }
+
+    .gallery img {
+        width: 340px !important;
+        height: 234px !important;
+    }
+
+    .gallery {
+        gap: 28px !important;
+    }
+
+    .lake-image {
+        height: 200px !important;
+    }
 }
