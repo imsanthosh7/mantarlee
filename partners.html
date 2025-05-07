@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Mantarlee </title>
+    <title>Partners | Mantarlee </title>
+
     <!-- CSS File Link  -->
     <link rel="stylesheet" href="style.css">
+    <!-- leaflet css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <!-- font asesome icon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -14,13 +14,15 @@
     <!-- Bootstrap CDN Link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- swiper js link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- remix icon link -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-
 </head>
 
-
 <body>
+
 
     <header>
         <!-- navbar section  -->
@@ -77,141 +79,131 @@
 
     </header>
 
+
     <!-- About Banner Section -->
-    <section class="about-banner">
-        <div class="about-banner-content">
+    <section class="ewastepartners-banner">
+        <div class="ewastepartners-banner-content">
             <div class="about-banner-text">
-                <h1>About Us</h1>
-                <p> We create value through creative solutions.</p>
-                <span><a class="text-decoration-none " href="index.html">Home</a> / About Us</span>
+                <h1>Partners</h1>
+                <p>Great partnerships build lasting impact.</p>
+                <span><a class="text-decoration-none " href="index.html">Home</a> / Partners</span>
             </div>
 
         </div>
     </section>
 
 
-    <section class="aboutus-section">
-        <div class="about-container">
-            <h2>Our Story</h2>
-            <p>
-                Mantarles began with a simple observation: <span class="highlight">communities thrive when they have the
-                    knowledge, tools, and support</span> to harness their own potential. We recognized that sustainable
-                change comes from <span class="highlight">empowering people at the grassroots level</span>.
-            </p>
-
-            <h2>Our Mission</h2>
-            <p>
-                To <span class="highlight">create wealth and respect for farmers</span>, inspire ecological stewardship
-                among children, and nurture innovation in education.
-            </p>
-
-            <h2>Why It Matters</h2>
-            <ul>
-                <li><span class="highlight">India ranks 117th in Global Hunger Index</span> and 199th in Human
-                    Development Index.</li>
-                <li><span class="highlight">Marginal farmers are dependent on uncertain rainfall</span> and often fall
-                    into debt traps.</li>
-                <li>The next generation needs both ecological awareness and innovative skills.</li>
-            </ul>
-
-            <h2>Our Approach</h2>
-            <p>
-                We work closely with grassroots NGOs, educators, and local communities to ensure every intervention is
-                <span class="highlight">practical, scalable, and sustainable</span>. Through <span
-                    class="highlight">hands-on training</span>, model farms, environmental education, and <span
-                    class="highlight">innovation labs</span>, we bring meaningful change.
-            </p>
-        </div>
-    </section>
-
-
-
-    <!-- our team section  -->
-    <section class="team-section">
-        <div class="title-global-border text-center">
-            <h1 class="mb-2">Our Team</h1>
+    <!-- ewastepartner section  -->
+    <section class=" px-2 overflow-x-hidden">
+        <div class="title-global-border text-center ewastepartener-section">
+            <h1 class="mb-2">E-Waste Management Services</h1>
             <div class="row justify-content-center mb-3">
-                <div class="col-lg-8 col-12 vision-impact-heading">
-                    <h5 class="mb-3">Driven by Experience & Passion</h5>
-                    <p>
-                        Our team is a dynamic blend of grassroots changemakers and industry professionals, including
-                        former HCLites united by a shared commitment to innovation, sustainability, and social impact.
+                <div class="col-lg-10 col-12 vision-impact-heading text-start">
+                    <h5 class="mb-3 text-center">Empowering Change through Collaboration</h5>
+                    <p class="text-center">
+                        We ensure complete and confidential data destruction, follow eco-friendly recycling practices
+                        that meet environmental standards, recover valuable materials from e-waste to maximize reuse,
+                        and provide flexible pickup and collection services to suit your convenience.
                     </p>
+
                 </div>
             </div>
         </div>
-
-        <!-- profiles card -->
-        <div class="container team-container">
-            <div class="row ">
-                <div class="col-md-6 mb-4">
-                    <div class="profile-card rounded">
-                        <img src="images/jayant_PNG.png" alt="Profile 1" class="img-fluid rounded-circle mb-3" />
-                        <h3>Jayant</h3>
-                        <p>Jayantan ex-HCLite with couple of decades experience in Technology mainly in Architecting,
-                            designing and developing solutions for business challenges in Banking and Financial
-                            industry.
-                            Jayant is on Dialysis since 13+ years and has discovered a lifestyle to be active. His
-                            learnings on managing the diet and exercise leading to active lifestyle has been an example
-                            and inspiration to many.
-                            He is mainly looking at utilizing technical and corporate experience to solve the problems
-                            of social sector. He is very passionate about mentoring people to discover their own
-                            potential.</p>
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="profile-card rounded">
-                        <img src="images/govind_PNG.png" alt="Profile 2" class="img-fluid rounded-circle mb-3" />
-                        <h3>Govind</h3>
-                        <p>Govind an ex-HCLite is a Mathematics graduate from University of Madras. He has worked with
-                            different reputed banks close to 12 years and later joined IT as a domain architect for
-                            close to 15 years.
-                            Govind is a Managing Partner for krishnafortoday. His friends knows him as an encyclopedia
-                            of Temples.
-                            He has been involved in social work in the areas of restoration of ancient temples and in
-                            feeding the poor/orphans for almost two decades now. Have also been actively engaged in
-                            teaching children in the neighborhood about our heritage. He is a keen animal lover who
-                            helps stray and ill animals in the streets.</p>
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="profile-card rounded">
-                        <img src="images/vasuu_PNG.png" alt="Profile 3" class="img-fluid rounded-circle mb-3" />
-                        <h3>Vasudevan</h3>
-                        <p>Vasudevan is an ex-HCLite with experience of working for various MNCs like Swiss Bank's and
-                            Deutsche
-                            Bank. Later, he ventured in business by floating his own company in the area of ERP for
-                            school Management with a customer base of 600+ schools and colleges across India.
-                            He is instrumental in carving out CSR partnership for Mythri Sarva Seva Samithi in the areas
-                            of Environment, Climate Smart Agriculture for Farmers.
-                            He is very much interested in analysis of ancient civilization & languages in Gulf & Asian
-                            Countries.</p>
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="profile-card rounded">
-                        <img src="images/purushotam_PNG.png" alt="Profile 4" class="img-fluid rounded-circle mb-3" />
-                        <h3>Purushotham</h3>
-                        <p>Purushotham is a postgraduate in Technology specializing in Thermal Power. Published 5
-                            international
-                            journal papers on biodiesel, thermal issues and fins. Guided a team of students for state
-                            level exhibition- a pesticide spraying machine, Guided a team of students to build a
-                            universal sowing machine for msme funded project. Purushotham has also completed various
-                            certifications in Integrated Farming, Sustainable Farming and Bee Management. He loves
-                            nature and passionate on various activities under Environment Sustainability.</p>
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
+
+    <section>
+        <div class="container py-2 ewastepartners-logo">
+            <h2 class="text-center mb-5">Our Partners</h2>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-5  justify-content-center">
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (1).svg"
+                        class="img-fluid" alt="Partner 1" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (1).jpg"
+                        class="img-fluid" alt="Partner 2" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (1).png"
+                        class="img-fluid" alt="Partner 3" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (1).webp"
+                        class="img-fluid" alt="Partner 4" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (10).jpg"
+                        class="img-fluid" alt="Partner 5" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (11).jpg"
+                        class="img-fluid" alt="Partner 6" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (12).jpg"
+                        class="img-fluid" alt="Partner 7" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (2).jpg"
+                        class="img-fluid" alt="Partner 8" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (2).png"
+                        class="img-fluid" alt="Partner 9" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (2).webp"
+                        class="img-fluid" alt="Partner 10" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (3).jpg"
+                        class="img-fluid" alt="Partner 11" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (3).png"
+                        class="img-fluid" alt="Partner 12" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (4).jpg"
+                        class="img-fluid" alt="Partner 13" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (5).jpg"
+                        class="img-fluid" alt="Partner 14" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (6).jpg"
+                        class="img-fluid" alt="Partner 15" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (7).jpg"
+                        class="img-fluid" alt="Partner 16" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (8).jpg"
+                        class="img-fluid" alt="Partner 17" style="max-height: 60px;"></div>
+                <div class="col text-center"><img src="images/ewastepartnerlogo/ewastepartnerlogo (9).jpg"
+                        class="img-fluid" alt="Partner 18" style="max-height: 60px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-4">
+        <div class="container py-5 ewastepartners-logo">
+            <h2 class="text-center mb-5">Our CSR Partners</h2>
+            <div class="row justify-content-center gy-5">
+
+                <!-- Mr. Farmer -->
+                <div class="col-12 col-sm-6 col-md-4 text-center">
+                    <h5 class="mb-4">Mr. Farmer</h5>
+                    <div class="d-flex flex-column align-items-center gap-4">
+                        <img src="images/csrpartnerslog/csrpartnerslogo (1).png" class="img-fluid"
+                            style="max-height: 60px;" />
+                        <img src="images/csrpartnerslog/csrpartnerslogo (2).png" class="img-fluid"
+                            style="max-height: 60px;" />
+                        <img src="images/csrpartnerslog/csrpartnerslogo (5).jpg" class="img-fluid"
+                            style="max-height: 60px;" />
+                        <img src="images/csrpartnerslog/csrpartnerslogo (1).jpg" class="img-fluid"
+                            style="max-height: 60px;" />
+                        <img src="images/csrpartnerslog/csrpartnerslogo (3).jpg" class="img-fluid"
+                            style="max-height: 60px;" />
+                    </div>
+                </div>
+
+                <!-- Vidya Vriksha -->
+                <div class="col-12 col-sm-6 col-md-4 text-center">
+                    <h5 class="mb-4">Vidya Vriksha</h5>
+                    <div class="d-flex flex-column align-items-center gap-4">
+                        <img src="images/csrpartnerslog/Picture1.png" class="img-fluid" style="max-height: 60px;" />
+                        <img src="images/csrpartnerslog/csrpartnerslogo (7).jpg" class="img-fluid"
+                            style="max-height: 60px;" />
+                    </div>
+                </div>
+
+                <!-- Mr. Innovator -->
+                <div class="col-12 col-sm-6 col-md-4 text-center">
+                    <h5 class="mb-4">Mr. Innovator</h5>
+                    <div class="d-flex flex-column align-items-center gap-4">
+                        <img src="images/csrpartnerslog/csrpartnerslogo (6).webp" class="img-fluid"
+                            style="max-height: 60px;" />
+                        <img src="images/csrpartnerslog/csrpartnerslogo (4).jpg" class="img-fluid"
+                            style="max-height: 60px;" />
+                        <img src="images/csrpartnerslog/csrpartnerslogo (2).png" class="img-fluid"
+                            style="max-height: 60px;" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- go to top  -->
@@ -297,16 +289,21 @@
 
 
 
-    <!-- javascript file link   -->
-    <script type="module" src="script.js"></script>
 
+
+
+    <!-- map script file  -->
+    <script type="module" src="map.js"></script>
+    <!-- javascript file link   -->
+    <script src="script.js"></script>
+    <!-- leaflet.js link  -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!-- Bootstrap Script link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
         defer></script>
-
 </body>
 
 </html>

@@ -841,7 +841,6 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 
-
 }
 
 .about-banner-content {
@@ -995,6 +994,68 @@ nav {
     color: #0077b5;
     text-decoration: none;
 }
+
+/* about page end  */
+
+/* partners page  */
+
+.ewastepartener-section {
+    padding: 4rem 6rem;
+    padding-bottom: 1rem;
+    color: var(--light-bg-color);
+    color: var(--text-light);
+}
+
+.ewastepartener-section h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    color: var(--primary-color);
+}
+
+.ewastepartners-logo h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.ewastepartners-logo h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--secondary-color-dark);
+}
+
+
+.ewastepartners-banner {
+    background-image: url(images/partnerbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.ewastepartners-banner-content {
+    padding: 4rem 6rem;
+    /* background: #ffffff; */
+    /* width: 100%; */
+    background: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(5, 79, 165, 0.74) 100%);
+}
+
+
+
+.ewastepartners-logo img:hover {
+    filter: grayscale(100%);
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1204,5 +1265,16 @@ nav {
         padding: 2rem 1rem;
     }
 
+    .ewastepartener-section {
+        padding: 4rem 1rem;
+    }
+
+    .ewastepartener-section h1 {
+        font-size: 29px;
+    }
+
+    .ewastepartners-banner-content {
+        padding: 3rem 1rem;
+    }
 
 }
