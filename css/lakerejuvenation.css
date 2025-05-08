@@ -125,59 +125,7 @@ li {
     border-radius: 2px;
 }
 
-/* Close button */
-.lightbox .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 22px;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    background: rgba(190, 190, 190, 0.249);
-    cursor: pointer;
-    z-index: 1001;
-}
 
-/* Nav buttons */
-.lightbox .nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 22px;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    background: rgba(190, 190, 190, 0.249);
-    /* background: none; */
-    border: none;
-    color: white;
-    cursor: pointer;
-    z-index: 1001;
-}
-
-.lightbox .prev {
-    left: 30px;
-}
-
-.lightbox .next {
-    right: 30px;
-}
-
-.lightbox .close:hover {
-    color: #ccc;
-}
-
-.lightbox .nav:hover {
-    color: #ccc;
-}
 
 @media (width < 768px) {
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightGallery Example</title>
+
+    <!-- LightGallery CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .gallery a {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Image Gallery</h2>
+    <div id="lightgallery" class="gallery">
+        <a href="https://picsum.photos/id/1015/800/600">
+            <img src="https://picsum.photos/id/1015/300/200" alt="Image 1" />
+            <div class="caption">Mountain View</div>
+        </a>
+        <a href="https://picsum.photos/id/1016/800/600">
+            <img src="https://picsum.photos/id/1016/300/200" alt="Image 2" />
+        </a>
+        <a href="https://picsum.photos/id/1018/800/600">
+            <img src="https://picsum.photos/id/1018/300/200" alt="Image 3" />
+        </a>
+        <a href="https://picsum.photos/id/1020/800/600">
+            <img src="https://picsum.photos/id/1020/300/200" alt="Image 4" />
+        </a>
+    </div>
+
+    <!-- LightGallery JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+
+    <!-- LightGallery Init -->
+    <script>
+        lightGallery(document.getElementById("lightgallery"), {
+            plugins: [lgZoom, lgThumbnail, lgFullscreen],
+            speed: 500,
+        });
+    </script>
+
+</body>
+
+</html>
