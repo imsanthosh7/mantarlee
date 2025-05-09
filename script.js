@@ -62,3 +62,13 @@ goToTopButton.addEventListener('click', () => {
 
 
 
+const modal = document.getElementById('linkedinModal');
+const iframe = document.getElementById('linkedinIframe');
+const originalSrc = iframe.src;
+
+modal.addEventListener('hidden.bs.modal', () => {
+  iframe.src = '';
+  setTimeout(() => {
+    iframe.src = originalSrc;
+  }, 200); // delay to avoid flicker
+});

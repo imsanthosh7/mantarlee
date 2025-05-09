@@ -361,11 +361,12 @@ nav {
     flex-direction: column;
     text-align: start;
     z-index: 10;
-    color: var(--rt-color-primary);
+    color: var(--rt-color-prima);
     /* background: #858585;
     background: linear-gradient(180deg, rgba(133, 133, 133, 0.43) 8%, rgba(5, 79, 165, 0.69) 91%); */
     background: #dedede;
     background: linear-gradient(180deg, rgba(222, 222, 222, 0.52) 0%, rgba(5, 79, 165, 0.49) 100%);
+    /* background: linear-gradient(180deg, rgba(222, 222, 222, 0.52) 0%, #212529a8 100%); */
 }
 
 .container-text-content {
@@ -380,8 +381,11 @@ nav {
     font-weight: 800;
     color: var(--primary-color);
 
-
 }
+
+
+
+
 
 .container__text p {
     font-size: 24px;
@@ -443,20 +447,22 @@ nav {
 /* about section  */
 
 .about-section {
-    width: var(--max-width);
+    /* width: var(--max-width); */
     padding: 4rem 6rem;
+
     background-color: var(--light-bg-color);
 }
 
 .about-image {
-    width: 500px;
+    width: 470px;
+
 }
 
 .about-content {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 
 }
 
@@ -465,7 +471,7 @@ nav {
     content: "";
     width: 40px;
     height: 3px;
-    top: -13px;
+    top: -14px;
     background: var(--secondary-color);
 
 }
@@ -475,6 +481,7 @@ nav {
 
     font-size: 16px;
     font-weight: 600;
+    position: relative;
     text-transform: uppercase;
 }
 
@@ -758,7 +765,7 @@ nav {
     color: white;
     font-size: 24px;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     cursor: pointer;
     display: none;
     justify-content: center;
@@ -847,8 +854,8 @@ nav {
     padding: 4rem 6rem;
     /* background: #ffffff; */
     /* width: 100%; */
-    background: #FFFFFF;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(5, 79, 165, 0.74) 100%);
+    background: #ffffff3c;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.626) 0%, rgba(5, 80, 165, 0.667) 100%);
 }
 
 .about-banner-text {
@@ -1165,13 +1172,17 @@ nav {
     }
 
     .container-text-content {
-        padding: 0 2rem;
-        margin-top: 226px;
+        padding: 0 1rem;
+        margin-top: 160px;
         width: 416px;
     }
 
+    .slide__img--img {
+        object-position: 75%;
+    }
+
     .container__text h2 {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 700;
 
     }
@@ -1277,4 +1288,33 @@ nav {
         padding: 3rem 1rem;
     }
 
+    .mrfarmer-banner-content {
+        padding: 3rem 1rem !important;
+    }
+
+    .mrinnovator-banner-content {
+        padding: 3rem 1rem !important;
+    }
+
 }
+
+
+/* 
+.thumbnail {
+    width: 380px;       
+    height: 230px;      
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    object-fit: cover;   
+  }
+  
+ 
+  .modal-content {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .modal-body {
+    padding: 0;
+  } */
