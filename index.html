@@ -31,54 +31,56 @@
 
         <!-- navbar section  -->
         <nav>
-            <div class="nav-bar">
-                <div class="nav-logo">
-                    <a href="#">
-                        <img class="logo" src="images/logotech (1).png" alt="logo">
-                    </a>
-                </div>
+            <div class="d-flex z-3 justify-content-between w-100 ">
+                <div class="nav-bar">
+                    <div class="nav-logo">
+                        <a href="#">
+                            <img class="logo" src="images/logotech (1).png" alt="logo">
+                        </a>
+                    </div>
 
 
-                <div id="nav-btn" class="nav-menu-btn">
-                    <i class="ri-menu-3-line"></i>
+                    <div id="nav-btn" class="nav-menu-btn">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
                 </div>
+
+                <ul id="nav-menu" class="nav-menu-links">
+                    <li><a class="line" href="#">HOME</a></li>
+                    <li><a class="line" href="about.html">ABOUT US</a></li>
+                    <li class="dropdown dropbtn">
+                        <a href="javascript:void(0)">THEMATIC AREAS<span class="arrow">
+                                <i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-content rounded">
+                            <li class="dropdown">
+                                <a href="#">Environment & Green World <span class="arrow">
+                                        <i class="fa-solid fa-angle-left"></i></span>
+                                </a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="lakerejuvenation.html">Lake Rejuvenation</a></li>
+                                    <li><a href="#">Climate Smart Agriculture</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">Lively Hood</a></li>
+                            <li class="dropdown">
+                                <a href="#">Education <span class="arrow">
+                                        <i class="fa-solid fa-angle-left"></i></span>
+                                </a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="#">BalaPragati</a></li>
+                                    <li><a href="#">Ms.Pragath</a></li>
+                                    <li><a href="#">Mr.Innovator</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li><a class="line" href="partners.html">PARTNERS</a></li>
+                    <li><a class="line" href="#">GALLERY</a></li>
+                    <li><a class="line" href="#contact">CONTECT US</a></li>
+                </ul>
             </div>
-
-            <ul id="nav-menu" class="nav-menu-links">
-                <li><a class="line" href="#">HOME</a></li>
-                <li><a class="line" href="about.html">ABOUT US</a></li>
-                <li class="dropdown dropbtn">
-                    <a href="javascript:void(0)">THEMATIC AREAS<span class="arrow">
-                            <i class="fa-solid fa-angle-down"></i></span>
-                    </a>
-                    <ul class="dropdown-content rounded">
-                        <li class="dropdown">
-                            <a href="#">Environment & Green World <span class="arrow">
-                                    <i class="fa-solid fa-angle-left"></i></span>
-                            </a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="lakerejuvenation.html">Lake Rejuvenation</a></li>
-                                <li><a href="#">Climate Smart Agriculture</a></li>
-                            </ul>
-                        </li>
-                        <li class=""><a href="#">Lively Hood</a></li>
-                        <li class="dropdown">
-                            <a href="#">Education <span class="arrow">
-                                    <i class="fa-solid fa-angle-left"></i></span>
-                            </a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="#">BalaPragati</a></li>
-                                <li><a href="#">Ms.Pragath</a></li>
-                                <li><a href="#">Mr.Innovator</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </li>
-                <li><a class="line" href="partners.html">PARTNERS</a></li>
-                <li><a class="line" href="#">GALLERY</a></li>
-                <li><a class="line" href="#contact">CONTECT US</a></li>
-            </ul>
 
         </nav>
 
@@ -87,51 +89,67 @@
             <article id="article__container" class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <!-- swiper 1 -->
-                    <div class="swiper-slide swiper-slide--style">
+                    <div class="swiper-slide  swiper-slide--style">
                         <span class="container__text">
-                            <div class="container-text-content">
-                                <h2>Empowering Farmers. Nurturing Nature. Inspiring Innovation</h2>
-                                <p>Creating sustainable impact across agriculture, environment, and education.</p>
-                                <a href="">Explore Our Initiatives <span class="icon"><i
-                                            class="fa-solid fa-arrow-right"></i></span></a>
+                            <div class="container-text-content container">
+                                <div class="container-text">
+                                    <h2>Empowering Farmers. Nurturing Nature. Inspiring Innovation</h2>
+                                    <p>Creating sustainable impact across agriculture, environment, and education.</p>
+                                    <a href="about.html">Read More <span class="icon"><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                            <!--mouse down-->
+                            <div class="container_mouse">
+                                <a href="#about">
+                                    <div>
+                                        <span class="mouse-btn">
+                                            <span class="mouse-scroll"></span>
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </span>
-                        <img src="images/pexels-ferdous-17080374.jpg" alt="Slide 1" class="slide__img--img">
+                        <img src="images/slider1.jpg" alt="Slide 1" class="slide__img--img">
                     </div>
                     <!-- swiper 2 -->
                     <div class="swiper-slide swiper-slide--style">
                         <span class="container__text">
-                            <div class="container-text-content">
-                                <h2>Lorem ipsum dolor sit amet.</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, tempora?</p>
-                                <a href="">Explore Our Initiatives <span class="icon"><i
-                                            class="fa-solid fa-arrow-right"></i></span></a>
+                            <div class="container-text-content  container">
+                                <div class="container-text">
+                                    <h2>Mr. Farmer</h2>
+                                    <p>Empowering Farmers with Climate-Smart Solutions</p>
+                                    <a href="mrfarmer.html">Explore Our Initiatives <span class="icon"><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
                             </div>
                         </span>
-                        <img src="https://st.depositphotos.com/1743476/1262/i/450/depositphotos_12621249-stock-photo-new-life.jpg"
-                            alt="Slide 2" class="slide__img--img">
+                        <img src="images/slider2.webp" alt="Slide 2" class="slide__img--img">
                     </div>
                     <!-- swiper 3 -->
                     <div class="swiper-slide swiper-slide--style">
                         <span class="container__text">
-                            <div class="container-text-content">
-                                <h2>Lorem, ipsum dolor.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis minus magni.</p>
-                                <a href="">Explore Our Initiatives <span class="icon"><i
-                                            class="fa-solid fa-arrow-right"></i></span></a>
+                            <div class="container-text-content container">
+                                <div class="container-text">
+                                    <h2>Vidya Vriksha</h2>
+                                    <p>Educating Youth on Nature, Sustainability & Green Living</p>
+                                    <a href="vidyavriksha.html">Explore Our Initiatives <span class="icon"><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
                             </div>
                         </span>
-                        <img src="https://st4.depositphotos.com/12305372/23579/i/450/depositphotos_235798140-stock-photo-rural-indian-family-with-bicycle.jpg"
-                            alt="Slide 3" class="slide__img--img">
+                        <img src="images/slider3.webp" alt="Slide 3" class="slide__img--img">
                     </div>
                     <!-- swiper 4 -->
                     <div class="swiper-slide swiper-slide--style">
                         <span class="container__text">
-                            <div class="container-text-content">
-                                <h2>Lorem ipsum dolor sit.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sapiente.</p>
-                                <a href="">Explore Our Initiatives <span class="icon"><i
-                                            class="fa-solid fa-arrow-right"></i></span></a>
+                            <div class="container-text-content container">
+                                <div class="container-text">
+                                    <h2>Mr. Innovator</h2>
+                                    <p>Empowering Students Through Sustainable Innovation and Traditional Knowledge</p>
+                                    <a href="mrinnovator.html">Explore Our Initiatives <span class="icon"><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
                             </div>
                         </span>
                         <img src="https://cmls-global.com/wp-content/uploads/2017/10/IT-manager.jpg" alt="Slide 3"
@@ -148,25 +166,32 @@
 
 
     <!-- about section  -->
-    <section class="about-section">
-        <div class="d-flex flex-column flex-lg-row gap-5">
+    <section class="about-section" id="about">
+        <div class="container d-flex flex-column flex-lg-row py-lg-4 gap-lg-4 gap-5">
             <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-center">
                 <img class="about-image img-fluid" src="https://placehold.co/600x500/blue/FFFFFF/png" alt="">
             </div>
             <div class="col-sm-12 col-lg-6 about-content ">
                 <h1>About Us</h1>
                 <h3>Empowering Communities Through Purpose-Driven CSR Initiatives</h3>
-                <p>At Mantarlee, we are dedicated to empowering communities by implementing sustainable and impactful
-                    CSR initiatives. Our programs focus on supporting marginal farmers through innovative agricultural
-                    practices, promoting environmental conservation through tree plantations and pollination projects,
-                    and nurturing future generations through education and skill development. By working closely with
-                    grassroots organizations and local communities, we strive to create long-lasting change that bridges
-                    the economic and social divide. Together, let’s build a more inclusive, responsible, and sustainable
+                <p>At Mantarlee, we are dedicated to empowering communities by implementing sustainable and
+                    impactful
+                    CSR initiatives. Our programs focus on supporting marginal farmers through innovative
+                    agricultural
+                    practices, promoting environmental conservation through tree plantations and pollination
+                    projects,
+                    and nurturing future generations through education and skill development. By working closely
+                    with
+                    grassroots organizations and local communities, we strive to create long-lasting change that
+                    bridges
+                    the economic and social divide. Together, let’s build a more inclusive, responsible, and
+                    sustainable
                     future for all.
                 </p>
             </div>
         </div>
     </section>
+
 
     <!-- Key Initiatives section -->
     <section class="initiatives-section">
@@ -174,7 +199,7 @@
             <h1>Our Key Initiatives</h1>
             <p>Driving meaningful change through focused efforts in agriculture, environment, and education.</p>
         </div>
-        <section class="initiatives py-3">
+        <section class="py-3 container">
             <div class="container text-center">
                 <div class="row g-4">
 
@@ -231,7 +256,7 @@
 
     <!-- About Section -->
     <section class="about-section">
-        <div class="d-flex flex-column flex-lg-row gap-5">
+        <div class="d-flex flex-column flex-lg-row gap-lg-4 gap-5 container">
             <div class="col-sm-12 col-lg-6 about-content order-lg-0 order-1">
                 <h1>Our Vision for a Sustainable Future</h1>
                 <h3>Building Resilient Communities Through Innovation and Education</h3>
@@ -273,7 +298,7 @@
 
     <!-- vision-impact section  -->
     <section class="vision-impact text-center">
-        <div class="title-global-border ">
+        <div class="title-global-border container">
             <h1 class=" mb-2">Our Vision & Impact</h1>
             <div class="row justify-content-center mb-3">
                 <div class="col-lg-8 col-12 vision-impact-heading">
@@ -315,17 +340,19 @@
 
     <!-- Our Presence section  -->
     <section class="presence-section text-center">
-        <div class="row justify-content-center">
-            <div class="title-global-border col-lg-8 col-12">
-                <h1 class="mb-3">Vision Statement</h1>
-                <p>Mantarlee CSR initiatives operate close to the communities we serve.
-                    We currently run programs across key regions in the north, south, and west of India.
-                    With impactful results, we aim to expand our reach nationwide.</p>
-            </div>
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="title-global-border col-lg-8 col-12">
+                    <h1 class="mb-3">Vision Statement</h1>
+                    <p>Mantarlee CSR initiatives operate close to the communities we serve.
+                        We currently run programs across key regions in the north, south, and west of India.
+                        With impactful results, we aim to expand our reach nationwide.</p>
+                </div>
 
+            </div>
+            <!-- map  -->
+            <div class="container" id="map"></div>
         </div>
-        <!-- map  -->
-        <div id="map"></div>
     </section>
 
 
@@ -333,8 +360,8 @@
     <button id="go-to-top" class="go-to-top"><i class="fa-solid fa-chevron-up"></i></button>
 
     <!-- footer section  -->
-    <div class="footer-container">
-        <footer class="footer-content text-center text-lg-start">
+    <div class="footer-container ">
+        <footer class="footer-content container text-center text-lg-start">
             <div class="p-4 pb-0">
                 <section>
                     <div class="row">
