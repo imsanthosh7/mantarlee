@@ -24,11 +24,11 @@ navLinks.addEventListener("click", (e) => {
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 260000000,
+      delay: 3000,
       disableOnInteraction: false,
+      pauseOnMouseEnter: false,
     },
     pagination: {
       el: ".swiper-pagination",
