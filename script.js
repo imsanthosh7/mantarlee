@@ -61,6 +61,33 @@ goToTopButton.addEventListener('click', () => {
 });
 
 
+const ScrollRevealOptions = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+}
+ScrollReveal().reveal(".move-up", {
+  ...ScrollRevealOptions,
+  interval: 500,
+})
+
+const ScrollRevealleft = {
+  distance: "50px",
+  origin: "left",
+  duration: 1400,
+}
+ScrollReveal().reveal(".move-left", {
+  ...ScrollRevealleft,
+})
+
+const ScrollRevealright = {
+  distance: "50px",
+  origin: "right",
+  duration: 1400,
+}
+ScrollReveal().reveal(".move-right", {
+  ...ScrollRevealright,
+})
 
 // const modal = document.getElementById('linkedinModal');
 // const iframe = document.getElementById('linkedinIframe');

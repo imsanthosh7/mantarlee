@@ -94,26 +94,12 @@
     </section>
 
 
-
+    <!-- gallery images section  -->
     <section class="gallery-section">
         <div class="container">
             <div id="lightgallery" class="gallery">
-                <a href="images/photo-collage.png (3).png">
-                    <img src="images/photo-collage.png (3).png" alt="Image 1" />
-                </a>
-                <a href="images/photo-collage.png (3).png">
-                    <img src="images/photo-collage.png (3).png" alt="Image 2" />
-                </a>
-                <a href="images/photo-collage.png (3).png">
-                    <img src="images/photo-collage.png (3).png" alt="Image 3" />
-                </a>
-                <a href="images/photo-collage.png (3).png">
-                    <img src="images/photo-collage.png (3).png" alt="Image 4" />
-                </a>
             </div>
         </div>
-
-
     </section>
 
 
@@ -203,6 +189,9 @@
 
 
 
+
+
+
     <!-- LightGallery JS (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
@@ -213,13 +202,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <!-- LightGallery Init -->
-    <script>
-        lightGallery(document.getElementById("lightgallery"), {
-            plugins: [lgZoom, lgThumbnail, lgFullscreen],
-            speed: 500,
-        });
-    </script>
+
+    <script src="gallery.js"></script>
 
 </body>
 
