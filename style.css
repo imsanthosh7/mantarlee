@@ -1427,6 +1427,10 @@ nav {
 
 
 
+.move-left,
+.move-right {
+    position: relative;
+}
 
 
 
