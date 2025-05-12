@@ -68,7 +68,7 @@ const ScrollRevealOptions = {
 }
 ScrollReveal().reveal(".move-up", {
   ...ScrollRevealOptions,
-  interval: 200,
+  interval: 300,
 })
 
 const ScrollRevealleft = {
