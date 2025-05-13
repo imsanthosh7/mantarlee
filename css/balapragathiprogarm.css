@@ -15,10 +15,10 @@ body {
 }
 
 .lakerejuvenation-banner {
-    background-image: url('../images/Picture1.png');
+    background-image: url('../images/bala_bragathi_banner.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .section-title {

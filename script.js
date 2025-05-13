@@ -99,3 +99,11 @@ ScrollReveal().reveal(".move-right", {
 //     iframe.src = originalSrc;
 //   }, 200); // delay to avoid flicker
 // });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const yrSpan = document.getElementById("year");
+  const currentYr = new Date().getFullYear();
+  yrSpan.textContent = currentYr;
+
+})
