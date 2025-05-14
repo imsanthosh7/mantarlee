@@ -1,58 +1,81 @@
-// navbar section 
+// ======= Mobile Menu Toggle =======
 const menuBtn = document.getElementById("nav-btn");
 const navLinks = document.getElementById("nav-menu");
 const menuBtnIcon = menuBtn.querySelector("i");
 
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
+menuBtn.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
 
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute(
-    "class",
-    isOpen ? "ri-close-line" : "ri-menu-3-line"
-  );
+  // Toggle icon
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-3-line");
+
+  // Close all submenus when nav closes
+  if (!isOpen) {
+    closeAllSubmenus();
+  }
 });
 
 
-
+// ======= Accordion (Main Menu) Toggle =======
 function toggleAccordion(button) {
   const content = button.nextElementSibling;
-  const isOpen = button.classList.contains('active');
+  const isOpen = button.classList.contains("active");
 
-  // Close all accordions
-  document.querySelectorAll('.accordion-toggle').forEach(btn => {
-    btn.classList.remove('active');
-    btn.nextElementSibling.style.display = 'none';
+  // Close all accordion items
+  document.querySelectorAll(".accordion-toggle").forEach(btn => {
+    btn.classList.remove("active");
+    btn.nextElementSibling.style.display = "none";
   });
 
+  // Open the selected one if it wasn't already open
   if (!isOpen) {
-    button.classList.add('active');
-    content.style.display = 'block';
+    button.classList.add("active");
+    content.style.display = "block";
   }
 }
 
+
+// ======= Nested Accordion (Submenu) Toggle =======
 function toggleNested(button) {
   const content = button.nextElementSibling;
-  const isOpen = button.classList.contains('active');
+  const isOpen = button.classList.contains("active");
 
-  // Close siblings only
-  const parent = button.closest('.accordion-content');
-  parent.querySelectorAll('.nested-toggle').forEach(btn => {
+  const parent = button.closest(".accordion-content");
+  if (!parent) return;
+
+  // Close all sibling nested items
+  parent.querySelectorAll(".nested-toggle").forEach(btn => {
     if (btn !== button) {
-      btn.classList.remove('active');
-      btn.nextElementSibling.style.display = 'none';
+      btn.classList.remove("active");
+      btn.nextElementSibling.style.display = "none";
     }
   });
 
+  // Toggle current nested item
   if (!isOpen) {
-    button.classList.add('active');
-    content.style.display = 'block';
+    button.classList.add("active");
+    content.style.display = "block";
   } else {
-    button.classList.remove('active');
-    content.style.display = 'none';
+    button.classList.remove("active");
+    content.style.display = "none";
   }
 }
 
+
+// ======= Utility: Close all accordions & nested =======
+function closeAllSubmenus() {
+  // Close main accordions
+  document.querySelectorAll(".accordion-toggle").forEach(btn => {
+    btn.classList.remove("active");
+    btn.nextElementSibling.style.display = "none";
+  });
+
+  // Close nested accordions
+  document.querySelectorAll(".nested-toggle").forEach(btn => {
+    btn.classList.remove("active");
+    btn.nextElementSibling.style.display = "none";
+  });
+}
 
 
 
@@ -63,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     autoplay: {
-      delay: 3000,
+      delay: 30000000,
       disableOnInteraction: false,
       pauseOnMouseEnter: false,
     },
@@ -126,16 +149,8 @@ ScrollReveal().reveal(".move-right", {
   ...ScrollRevealright,
 })
 
-// const modal = document.getElementById('linkedinModal');
-// const iframe = document.getElementById('linkedinIframe');
-// const originalSrc = iframe.src;
 
-// modal.addEventListener('hidden.bs.modal', () => {
-//   iframe.src = '';
-//   setTimeout(() => {
-//     iframe.src = originalSrc;
-//   }, 200); // delay to avoid flicker
-// });
+
 
 document.addEventListener("DOMContentLoaded", function () {
 

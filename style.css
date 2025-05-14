@@ -1246,15 +1246,17 @@ nav {
     .nav-menu-links {
         position: absolute;
         width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 2rem;
         background-color: var(--primary-color);
         transform: translateY(-100%);
         top: 0;
         transition: 0.5s;
-        margin-top: 90px;
+        margin-top: 0px;
         padding-bottom: 25px !important;
         padding-top: 20px !important;
         z-index: -1;
@@ -1265,6 +1267,65 @@ nav {
         margin-left: -10px;
         font-size: 20px;
         color: var(--white);
+    }
+
+
+    .mobile-menu {
+        font-family: sans-serif;
+        text-align: center;
+        width: 100%;
+    }
+
+    .accordion-toggle{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+    .accordion-toggle,
+    .nested-toggle {
+        width: 100%;
+        padding: 10px 0;
+        color: var(--white);
+        font-weight: 700;
+        border: none;
+        background: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+    }
+
+    ul {
+        padding-left: 0rem !important;
+    }
+
+    .accordion-toggle .icon,
+    .nested-toggle .icon {
+        transition: transform 0.3s ease;
+    }
+
+    .accordion-toggle.active .icon,
+    .nested-toggle.active .icon {
+        transform: rotate(180deg);
+    }
+
+    .accordion-content,
+    .nested-content {
+        display: none;
+    }
+
+    .nested-content a {
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--primary-color);
+        text-decoration: none;
+        background-color: var(--white);
     }
 
     .container-text {
@@ -1311,6 +1372,7 @@ nav {
     .nav-menu-links li a::before,
     .nav-menu-links li a::after {
         background-color: var(--primary-color);
+        display: none;
     }
 
     .about-section {
@@ -1423,63 +1485,6 @@ nav {
     }
 
 
-
-
-.mobile-menu {
-  font-family: sans-serif;
-  text-align: center;
-  width: 100%;
-}
-
-
-.accordion-toggle,
-.nested-toggle {
-  width: 100%;
-  padding: 13px 0;
-  color: var(--white);
-  font-weight: 700;
-  border: none;
-  background: none;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-
-}
-
-.accordion-toggle .icon,
-.nested-toggle .icon {
-  transition: transform 0.3s ease;
-}
-
-.accordion-toggle.active .icon,
-.nested-toggle.active .icon {
-  transform: rotate(180deg);
-}
-
-.accordion-content,
-.nested-content {
-  display: none;
-}
-
-.nested-content a {
-  display: block;
-  padding: 10px 0;
-  color: var(--white);
-  text-decoration: none;
-  background-color: ;
-}
-
-.nested-content a:hover {
-  text-decoration: underline;
-}
-
-
-
-
-
 }
 
 
@@ -1487,30 +1492,8 @@ nav {
 
 
 
-.move-left,
-.move-right {
-    position: relative;
-}
 
 
 
 
-/* 
-.thumbnail {
-    width: 380px;       
-    height: 230px;      
-    cursor: pointer;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    object-fit: cover;   
-  }
-  
- 
-  .modal-content {
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  .modal-body {
-    padding: 0;
-  } */
+
