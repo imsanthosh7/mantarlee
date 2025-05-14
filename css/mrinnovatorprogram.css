@@ -14,19 +14,11 @@ body {
     overflow-x: hidden;
 }
 
-.lakerejuvenation-banner {
-    background-image: url('../images/bala_bragathi_banner.webp');
+.mrinnovatorprogaram-banner {
+    background-image: url('../images/mrinnovatorbanner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-}
-
-.lakerejuvenation-content p a {
-    color: var(--text-light);
-}
-
-.lakerejuvenation-content p a:hover {
-    color: var(--primary-color);
+    background-position: center;
 }
 
 .section-title {
@@ -57,8 +49,8 @@ li {
 }
 
 
-.balapragathiprogarm-container {
-    padding: 2rem 6rem;
+.lakerejuvenation-container {
+    padding: 4rem 6rem;
     background-color: var(--light-bg-color);
     color: var(--text-light);
 
@@ -138,7 +130,7 @@ li {
 @media (width < 768px) {
 
 
-    .balapragathiprogarm-container {
+    .lakerejuvenation-container {
         padding: 2rem 1rem !important;
     }
 

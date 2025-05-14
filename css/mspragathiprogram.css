@@ -21,6 +21,14 @@ body {
     background-position: top;
 }
 
+.mspargathi-program-container p a {
+    color: var(--text-light);
+}
+
+.mspargathi-program-container p a:hover {
+    color: var(--primary-color);
+}
+
 .section-title {
     font-weight: bold;
     font-size: 1.4rem;
@@ -49,8 +57,8 @@ li {
 }
 
 
-.lakerejuvenation-container {
-    padding: 4rem 6rem;
+.mspargathi-program-container {
+    padding: 2rem 6rem;
     background-color: var(--light-bg-color);
     color: var(--text-light);
 
@@ -130,7 +138,7 @@ li {
 @media (width < 768px) {
 
 
-    .lakerejuvenation-container {
+    .mspargathi-program-container {
         padding: 2rem 1rem !important;
     }
 

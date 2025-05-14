@@ -13,10 +13,47 @@ menuBtn.addEventListener("click", (e) => {
   );
 });
 
-navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-3-line");
-});
+
+
+function toggleAccordion(button) {
+  const content = button.nextElementSibling;
+  const isOpen = button.classList.contains('active');
+
+  // Close all accordions
+  document.querySelectorAll('.accordion-toggle').forEach(btn => {
+    btn.classList.remove('active');
+    btn.nextElementSibling.style.display = 'none';
+  });
+
+  if (!isOpen) {
+    button.classList.add('active');
+    content.style.display = 'block';
+  }
+}
+
+function toggleNested(button) {
+  const content = button.nextElementSibling;
+  const isOpen = button.classList.contains('active');
+
+  // Close siblings only
+  const parent = button.closest('.accordion-content');
+  parent.querySelectorAll('.nested-toggle').forEach(btn => {
+    if (btn !== button) {
+      btn.classList.remove('active');
+      btn.nextElementSibling.style.display = 'none';
+    }
+  });
+
+  if (!isOpen) {
+    button.classList.add('active');
+    content.style.display = 'block';
+  } else {
+    button.classList.remove('active');
+    content.style.display = 'none';
+  }
+}
+
+
 
 
 

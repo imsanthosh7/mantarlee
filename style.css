@@ -23,6 +23,7 @@ html,
 body {
     font-family: "Montserrat", sans-serif !important;
     scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -82,7 +83,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    /* background-color: var(--text-light) !important; */
 }
 
 .nav-menu-btn {
@@ -262,6 +262,8 @@ nav {
 .dropdown-submenu a:hover {
     color: var(--white);
 }
+
+
 
 /* dropdown end  */
 
@@ -1419,6 +1421,64 @@ nav {
     .gallery-section {
         padding: 2rem 1rem;
     }
+
+
+
+
+.mobile-menu {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+
+.accordion-toggle,
+.nested-toggle {
+  width: 100%;
+  padding: 13px 0;
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  background: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+}
+
+.accordion-toggle .icon,
+.nested-toggle .icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-toggle.active .icon,
+.nested-toggle.active .icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content,
+.nested-content {
+  display: none;
+}
+
+.nested-content a {
+  display: block;
+  padding: 10px 0;
+  color: var(--white);
+  text-decoration: none;
+  background-color: ;
+}
+
+.nested-content a:hover {
+  text-decoration: underline;
+}
+
+
+
+
 
 }
 
