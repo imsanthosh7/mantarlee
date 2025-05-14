@@ -30,7 +30,7 @@
             <div class="container  d-flex z-3 justify-content-between w-100 ">
                 <div class="nav-bar">
                     <div class="nav-logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img class="logo" src="images/logotech (1).png" alt="logo">
                         </a>
                     </div>
@@ -44,47 +44,101 @@
                 <ul id="nav-menu" class="nav-menu-links">
                     <li><a class="line" href="index.html">HOME</a></li>
                     <li><a class="line" href="about.html">ABOUT US</a></li>
-                    <li class="dropdown dropbtn">
+                    <li class="dropdown dropbtn d-none d-lg-block">
                         <a href="javascript:void(0)">THEMATIC AREAS<span class="arrow">
                                 <i class="fa-solid fa-angle-down"></i></span>
                         </a>
-                        <ul class="dropdown-content">
+                        <ul class="dropdown-content ">
                             <li class="dropdown">
-                                <a href="#">Environment & Green World <span class="arrow">
+                                <a href="javascript:void(0)">Environment & Green World <span class="arrow">
                                         <i class="fa-solid fa-angle-left"></i></span>
                                 </a>
                                 <ul class="dropdown-submenu">
-                                    <li><a href="#">Lake Rejuvenation</a></li>
+                                    <li><a href="lakerejuvenation.html">Lake Rejuvenation</a></li>
                                     <li><a href="climatesmartagriculture.html">Climate Smart Agriculture</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#">livelihood<span class="arrow">
+                                <a href="javascript:void(0)">livelihood<span class="arrow">
                                         <i class="fa-solid fa-angle-left"></i></span>
                                 </a>
                                 <ul class="dropdown-submenu">
-                                    <li><a href="lakerejuvenation.html">Mr. Farmer</a></li>
+                                    <li><a href="mrfarmerprogram.html">Mr. Farmer</a></li>
                                 </ul>
                             </li>
                             <br>
                             <li class="dropdown">
-                                <a href="#">Education <span class="arrow">
+                                <a href="javascript:void(0)">Education <span class="arrow">
                                         <i class="fa-solid fa-angle-left"></i></span>
                                 </a>
                                 <ul class="dropdown-submenu">
-                                    <li><a href="#">BalaPragati</a></li>
-                                    <li><a href="#">Ms.Pragath</a></li>
-                                    <li><a href="#">Mr.Innovator</a></li>
+                                    <li><a href="balapragathiprogarm.html">Bala Pragathi</a></li>
+                                    <li><a href="mspragathiprogram.html">Ms. Pragathi</a></li>
+                                    <li><a href="mrinnovatorprogram.html">Mr. Innovator</a></li>
                                 </ul>
                             </li>
                         </ul>
 
                     </li>
-                    <li><a class="line" href="#price">PARTNERS</a></li>
+                    <div class="mobile-menu d-lg-none">
+
+                        <!-- MAIN ITEM -->
+                        <div class="accordion-item d-lg-none d-block ">
+                            <button class="accordion-toggle" onclick="toggleAccordion(this)">
+                                THEMATIC AREAS
+                                <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                            </button>
+
+                            <!-- SHOW WHEN THEMATIC AREAS IS CLICKED -->
+                            <div class="accordion-content">
+
+                                <!-- Environment & Green World -->
+                                <div class="nested-item">
+                                    <button class="nested-toggle" onclick="toggleNested(this)">
+                                        Environment & Green World
+                                        <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </button>
+                                    <div class="nested-content">
+                                        <a href="lakerejuvenation.html">Lake Rejuvenation</a>
+                                        <a href="climatesmartagriculture.html">Climate Smart Agriculture</a>
+                                    </div>
+                                </div>
+
+                                <!-- Livelihood -->
+                                <div class="nested-item">
+                                    <button class="nested-toggle" onclick="toggleNested(this)">
+                                        Livelihood
+                                        <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </button>
+                                    <div class="nested-content">
+                                        <a href="mrfarmerprogram.html">Mr. Farmer</a>
+                                    </div>
+                                </div>
+
+                                <!-- Education -->
+                                <div class="nested-item">
+                                    <button class="nested-toggle" onclick="toggleNested(this)">
+                                        Education
+                                        <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </button>
+                                    <div class="nested-content">
+                                        <a href="balapragathiprogarm.html">Bala Pragathi</a>
+                                        <a href="mspragathiprogram.html">Ms. Pragathi</a>
+                                        <a href="mrinnovatorprogram.html">Mr. Innovator</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <li><a class="line" href="partners.html">PARTNERS</a></li>
+                    <li><a class="line" href="gallery.html">GALLERY</a></li>
                     <li><a class="line" href="#contact">CONTECT US</a></li>
                 </ul>
-
             </div>
+
         </nav>
 
     </header>
@@ -96,7 +150,8 @@
         <div class="about-banner-content">
             <div class="about-banner-text container">
                 <h1>Lake Rejuvenation</h1>
-                <span><a class="text-decoration-none " href="index.html"><i class="fa-solid fa-house"></i></a> / Lake Rejuvenation</span>
+                <span><a class="text-decoration-none " href="index.html"><i class="fa-solid fa-house"></i></a> / Lake
+                    Rejuvenation</span>
             </div>
 
         </div>

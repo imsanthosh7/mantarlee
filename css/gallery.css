@@ -10,6 +10,7 @@
       padding: 4rem 6rem;
       background: #ffffff3c;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.626) 0%, rgba(5, 80, 165, 0.667) 100%);
+      min-height: 310px;
   }
 
   .gallery-banner-text {
