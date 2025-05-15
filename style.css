@@ -602,6 +602,20 @@ nav {
     color: var(--text-light);
 }
 
+
+.initiatives-content a:hover {
+    color: rgb(203, 203, 203) !important;
+}
+
+
+a.fw-medium i {
+    transition: transform 0.3s ease;
+}
+
+a.fw-medium:hover i {
+    transform: translateX(5px);
+}
+
 .initiatives-content {
     transition: background 0.4s ease-in-out;
 
@@ -818,6 +832,7 @@ nav {
 /* go tp top button  */
 .go-to-top {
     position: fixed;
+    z-index: 1;
     bottom: 103px;
     right: 28px;
     width: 38px;
@@ -833,6 +848,7 @@ nav {
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: bottom .4s, transform .4s;
+
 }
 
 .go-to-top i {
@@ -927,7 +943,7 @@ nav {
 .about-banner-text h1 {
     font-size: 2.7rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--extra-light);
 }
 
 .about-banner-text p {
@@ -1547,7 +1563,9 @@ nav {
     }
 
     .row {
-       
+        --bs-gutter-x: 0rem !important;
         margin-right: 0px !important;
     }
+
+
 }
