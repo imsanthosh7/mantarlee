@@ -5,7 +5,7 @@ const menuBtnIcon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
-  window.navigator.vibrate([300])
+  window.navigator.vibrate([200])
 
 
   // Toggle icon
