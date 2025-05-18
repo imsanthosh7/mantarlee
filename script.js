@@ -5,6 +5,8 @@ const menuBtnIcon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
+  window.navigator.vibrate([500])
+
 
   // Toggle icon
   menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-3-line");
