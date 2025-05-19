@@ -91,7 +91,7 @@ nav {
 
 .nav-menu-btn {
     font-size: 1.8rem;
-    color: var(--secondary-color-dark);
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -1357,7 +1357,7 @@ a.fw-medium:hover i {
 
     .nav-bar {
         padding: 1.2rem !important;
-        background-color: var(--white);
+        background-color: var(--primary-color);
         width: 100%;
 
     }
