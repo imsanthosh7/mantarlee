@@ -85,6 +85,12 @@ li {
     color: var(--text-light);
 }
 
+.vision-impact-heading h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color-dark);
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
