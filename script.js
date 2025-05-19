@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// counter animation 
 
 const counters = document.querySelectorAll('.counter');
 let hasAnimated = false;
