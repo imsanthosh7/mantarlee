@@ -1,23 +1,93 @@
 const images = [
     {
-        src: "images/photo-collage.png (3).png",
+        src: "images/gallery_images/mr_farmer_program1.jpg",
         alt: "Image 1",
-        desc: "First image description"
-    },
-    {
-        src: "images/photo-collage.png (3).png",
+        desc: "Mr. Farmer"
+    }, {
+        src: "images/gallery_images/mr_farmer_program2.jpg",
         alt: "Image 2",
-        desc: "Second image description"
+        desc: "Mr. Farmer"
     },
     {
-        src: "images/photo-collage.png (3).png",
+        src: "images/gallery_images/mr_farmer_program3.jpg",
         alt: "Image 3",
-        desc: "Third image description"
+        desc: "Mr. Farmer"
+    },
+
+    {
+        src: "images/gallery_images/mr_farmer_program4.jpg",
+        alt: "Image 4",
+        desc: "Mr. Farmer"
+    },
+
+    {
+        src: "images/gallery_images/mr_farmer_program5.jpg",
+        alt: "Image 5",
+        desc: "Mr. Farmer"
+    },
+
+    {
+        src: "images/gallery_images/mr_farmer_program6.jpg",
+        alt: "Image 6",
+        desc: "Mr. Farmer"
+    },
+
+    {
+        src: "images/gallery_images/mr_farmer_program7.jpg",
+        alt: "Image 7",
+        desc: "Mr. Farmer"
+    },
+
+    {
+        src: "images/gallery_images/mr_farmer_program8.jpg",
+        alt: "Image 8",
+        desc: "Mr. Farmer"
+    },
+
+    {
+        src: "images/gallery_images/mr_farmer_program9.jpg",
+        alt: "Image 9",
+        desc: "Mr. Farmer"
     },
     {
-        src: "images/photo-collage.png (3).png",
-        alt: "Image 4",
-        desc: "Fourth image description"
+        src: "images/gallery_images/mr_farmer_program10.jpg",
+        alt: "Image 10",
+        desc: "Mr. Farmer"
+    },
+    {
+        src: "images/gallery_images/mr_farmer_program11.png",
+        alt: "Image 11",
+        desc: "Mr. Farmer"
+    },
+    {
+        src: "images/gallery_images/mr_farmer_program12.png",
+        alt: "Image 12",
+        desc: "Mr. Farmer"
+    },
+    {
+        src: "images/gallery_images/mr_farmer_program13.png",
+        alt: "Image 13",
+        desc: "Mr. Farmer"
+    },
+    {
+        src: "images/gallery_images/mr_farmer_program14.png",
+        alt: "Image 14",
+        desc: "Mr. Farmer"
+    },
+    {
+        src: "images/gallery_images/mr_farmer_program15.png",
+        alt: "Image 15",
+        desc: "Mr. Farmer"
+    },
+    {
+        src: "images/gallery_images/mr_farmer_program16.jpg",
+        alt: "Image 16",
+        desc: "Mr. Farmer"
+    },
+    {
+        src: "images/gallery_images/mr_farmer_program17.jpg",
+        alt: "Image 17",
+        desc: "Mr. Farmer"
     }
 ];
 

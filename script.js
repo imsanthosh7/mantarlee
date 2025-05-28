@@ -1,11 +1,11 @@
-// ======= Mobile Menu Toggle =======
+// Mobile Menu Toggle 
 const menuBtn = document.getElementById("nav-btn");
 const navLinks = document.getElementById("nav-menu");
 const menuBtnIcon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
-  window.navigator.vibrate([200])
+  // window.navigator.vibrate([200])
 
 
   // Toggle icon
@@ -18,7 +18,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-// ======= Accordion (Main Menu) Toggle =======
+// Accordion Main Menu Toggle
 function toggleAccordion(button) {
   const content = button.nextElementSibling;
   const isOpen = button.classList.contains("active");
@@ -37,7 +37,7 @@ function toggleAccordion(button) {
 }
 
 
-// ======= Nested Accordion (Submenu) Toggle =======
+// Nested Accordion (Submenu) Toggle 
 function toggleNested(button) {
   const content = button.nextElementSibling;
   const isOpen = button.classList.contains("active");
@@ -64,7 +64,7 @@ function toggleNested(button) {
 }
 
 
-// ======= Utility: Close all accordions & nested =======
+//  Close all accordions & nested 
 function closeAllSubmenus() {
   // Close main accordions
   document.querySelectorAll(".accordion-toggle").forEach(btn => {
@@ -176,4 +176,6 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(document.getElementById('counters'));
+
+
 
