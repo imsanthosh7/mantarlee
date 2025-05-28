@@ -70,7 +70,7 @@ const images = [
         desc: "Mr. Farmer"
     },
     {
-        src: "images/gallery_images/mr_farmer_program14.png",
+        src: "images/gallery_images/mr_farmer_program14.jpg",
         alt: "Image 14",
         desc: "Mr. Farmer"
     },
@@ -88,7 +88,28 @@ const images = [
         src: "images/gallery_images/mr_farmer_program17.jpg",
         alt: "Image 17",
         desc: "Mr. Farmer"
-    }
+    },
+     {
+        src: "images/gallery_images/mr_farmer_program18.jpg",
+        alt: "Image 18",
+        desc: "Mr. Farmer"
+    },
+     {
+        src: "images/gallery_images/mr_farmer_program19.jpg",
+        alt: "Image 19",
+        desc: "Mr. Farmer"
+    },
+     {
+        src: "images/gallery_images/mr_farmer_program20.jpg",
+        alt: "Image 20",
+        desc: "Mr. Farmer"
+    },
+     {
+        src: "images/gallery_images/mr_farmer_program21.jpg",
+        alt: "Image 21",
+        desc: "Mr. Farmer"
+    },
+    
 ];
 
 

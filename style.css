@@ -26,6 +26,10 @@ body {
 
 }
 
+html {
+    scroll-padding-top: 40px;
+}
+
 @view-transition {
     navigation: auto;
 }
@@ -1355,6 +1359,10 @@ a.fw-medium:hover i {
 
 @media (width < 768px) {
 
+    html {
+        scroll-padding-top: 100px;
+    }
+
     .nav-bar {
         padding: 1.2rem !important;
         background-color: var(--primary-color);
@@ -1656,8 +1664,8 @@ a.fw-medium:hover i {
         font-size: 2.1rem !important;
     }
 
-    .contact-banner-content{
-            min-height: 310px !important;
+    .contact-banner-content {
+        min-height: 310px !important;
     }
 
 }
